@@ -16,13 +16,13 @@ const Chat = () => {
         </div>
       </div>
       <div className=""></div>
-      <div className="flex p-5 items-center justify-between border-t border-gray-300">
+      <div className="flex p-5 items-center gap-5 justify-between border-t border-gray-300">
         <div className="flex gap-5">
           <img className="size-5 cursor-pointer" src="/img.png" alt="" />
           <img className="size-5 cursor-pointer" src="/camera.png" alt="" />
           <img className="size-5 cursor-pointer" src="/mic.png" alt="" />
         </div>
-        <input className="flex-1 bg-transparent border-none outline-none text-white placeholder:text-gray-200" type="text" placeholder="Type a message..." />
+        <input className="flex-1 p-5 rounded-lg text-base bg-black/40 border-none outline-none text-white" type="text" placeholder="Type a message..." />
         <div>
           <img src="/emoji.png" alt="" />
         </div>
