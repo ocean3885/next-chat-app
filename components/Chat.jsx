@@ -37,8 +37,20 @@ const Chat = () => {
       </div>
       <div
         id="center"
-        className="p-5 flex-1 overflow-scroll flex flex-col gap-5"
+        className="p-5 flex-1 overflow-auto flex flex-col gap-5"
       >
+        <div className="message">
+          <img src="/avatar.png" alt="" />
+          <div className="texts">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Molestiae quibusdam omnis ut voluptas aut a alias unde porro
+              maiores asperiores vitae magni dolorum, tempora dolorem non
+              excepturi vero aliquam velit.
+            </p>
+            <span>1 min ago</span>
+          </div>
+        </div>
         <div className="message own">
           <div className="texts">
             <p>
@@ -51,7 +63,20 @@ const Chat = () => {
           </div>
         </div>
         <div className="message">
+          <img src="/avatar.png" alt="" />
           <div className="texts">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Molestiae quibusdam omnis ut voluptas aut a alias unde porro
+              maiores asperiores vitae magni dolorum, tempora dolorem non
+              excepturi vero aliquam velit.
+            </p>
+            <span>1 min ago</span>
+          </div>
+        </div>
+        <div className="message own">
+          <div className="texts">
+            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1o8Wxv.img?w=500&h=354&m=6&x=144&y=74&s=51&d=51" alt=""/>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Molestiae quibusdam omnis ut voluptas aut a alias unde porro
