@@ -1,18 +1,22 @@
 "use client";
 
 import EmojiPicker from "emoji-picker-react";
-import { useState } from "react";
-import './Chat.css';
+import { useEffect, useRef, useState } from "react";
+import './chat.css';
 
 const Chat = () => {
   const [open, setOpen] = useState(false);
   const [text, setText] = useState("");
 
+  const endRef = useRef(null)
   const handleEmoji = (e) => {
     setText((prev) => prev + e.emoji);
     setOpen(false);
   };
-
+ 
+  useEffect(()=>{
+    endRef.current?.scrollIntoView({behavior:"smooth"})
+  },[])
   return (
     <div className="flex flex-col basis-1/2 border-l border-r border-gray-300 h-full">
       <div className="p-5 flex items-center justify-between border-b border-gray-300">
@@ -86,6 +90,7 @@ const Chat = () => {
             <span>1 min ago</span>
           </div>
         </div>
+        <div ref={endRef}></div>
       </div>
       <div
         id="chat-bottom"
